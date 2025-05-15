@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Área do Aluno – NoCode 3 Dias</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #0f172a; color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; }
+        .content { display: none; flex-direction: column; gap: 20px; }
+    </style>
+    <script>
+        window.onload = function () {
+            var senha = prompt("Digite a senha de acesso:");
+            if (senha === "nocade3dias2025") {
+                document.querySelector('.content').style.display = 'flex';
+            } else {
+                document.body.innerHTML = "<h2>Acesso negado.</h2>";
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h1>Bem-vindo à Área do Aluno</h1>
+        <p>Curso Desenvolvedor No-Code em 3 Dias</p>
+        <p>O conteúdo completo será exibido aqui após a senha correta.</p>
+    </div>
+</body>
+</html>
